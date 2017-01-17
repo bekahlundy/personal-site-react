@@ -11,6 +11,17 @@ nav {
   float: right;
 }
 
+.inline {
+  display: inline-block;
+}
+
+.log-in {
+  margin: 10px;
+  &:hover {
+    opacity: .6;
+  }
+}
+
 header h1 {
   float: left;
   // text-indent: -9999px;
