@@ -1,0 +1,145 @@
+.space {
+  height: 70px;
+}
+.one {
+  background-color: aliceblue;
+  height: 600px;
+}
+
+.one-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 42px;
+  margin-top: 20px;
+  margin: 80px 0 0 -80px
+}
+
+.one-moto {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 28px;
+  margin-top: 20px;
+  margin: 140px 0 0 -220px
+}
+
+.wrapper {
+  background: aliceblue;
+  // margin: 10px;
+}
+
+.triangle-down{
+    box-sizing: content-box;
+    width: 50%;
+    height: 0;
+    padding-left:50%;
+    padding-top: 5%;
+    overflow: hidden;
+}
+.triangle-down div {
+    width: 0;
+    height: 0;
+    margin-left:-1000px;
+    margin-top:-100px;
+    border-left: 1000px solid #fff;
+    border-right: 1000px solid #fff;
+    border-top: 100px solid aliceblue;
+}
+
+.two {
+  background-color: aliceblue;
+  height: 600px;
+}
+
+.two-about {
+  font-size: 42px;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.two-icon-container {
+  display: inline-block;
+}
+
+
+
+.three {
+  background-color: aliceblue;
+  height: 550px;
+}
+
+.three-outline {
+  border: 6px solid white;
+  display: inline-block;
+  height: 300px;
+  top: 50%;
+  left: 50%;
+  margin: 80px 0 0 -15px;
+  padding: 40px;
+  width: 70%;
+}
+
+.three-h1 {
+  font-size: 46px;
+  margin: 60px 0;
+}
+
+.three-catchphrase {
+  font-size: 22px
+}
+
+.three-button {
+  font-family:'Quicksand', sans-serif;
+	position: relative;
+	padding: 10px;
+	border: none;
+	color: white;
+	transition: .3s;
+  margin: 10px;
+  background: lighten(#3D9AE2, 10%);
+  color: black;
+  &:hover {
+    background: darken(#3D9AE2, 10%);
+}
+}
+
+@media (max-width: 600px) {
+  .one {
+    height: 550px;
+  }
+
+  .one-logo {
+    margin: -120px 0 0 -90px
+  }
+
+  .one-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 42px;
+    margin-top: 20px;
+    margin: 30px 0 0 -200px
+  }
+
+  .space {
+    height: 60px;
+  }
+
+  .two {
+    height: 1050px;
+  }
+
+  .two-physical-container, .two-emotional-container, .two-mental-container, .two-spiritual-container {
+    margin: 20px auto;
+    float:none;
+  }
+
+  .three-outline {
+    width: 60%;
+  }
+
+  .three-h1 {
+    margin: 25px 0;
+  }
+}
