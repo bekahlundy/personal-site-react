@@ -1,7 +1,12 @@
 @import 'Body';
+@import 'Nav';
+@import 'variables';
 @import 'reset';
 $font: 'Lato', sans-serif;
 
+body {
+  font-family: $font;
+}
 .center-nav {
   text-align: center;
 }

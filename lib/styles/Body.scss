@@ -1,35 +1,50 @@
+@import 'variables';
+
 .space {
-  height: 70px;
+  height: 100px;
+}
+
+.big-space {
+  height: 200px;
 }
 .one {
-  background-color: aliceblue;
-  height: 600px;
+  background-color: $one-background-color;
+  height: 500px;
 }
 
 .one-title {
-  position: absolute;
-  top: 50%;
-  left: 50%;
+  text-align: center;
   font-size: 42px;
   margin-top: 20px;
-  margin: 80px 0 0 -80px
 }
 
 .one-moto {
-  position: absolute;
-  top: 50%;
-  left: 50%;
+  text-align: center;
   font-size: 28px;
   margin-top: 20px;
-  margin: 140px 0 0 -220px
 }
 
+.one-socialmedia-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.icon {
+  margin: 0 10px;
+}
+
+
 .wrapper {
-  background: aliceblue;
+  background: $one-background-color;
   // margin: 10px;
 }
 
-.triangle-down{
+.wrapper {
+  background: white;
+  // margin: 10px;
+}
+
+.triangle-down, .triangle-down-yellow {
     box-sizing: content-box;
     width: 50%;
     height: 0;
@@ -37,6 +52,7 @@
     padding-top: 5%;
     overflow: hidden;
 }
+
 .triangle-down div {
     width: 0;
     height: 0;
@@ -44,64 +60,146 @@
     margin-top:-100px;
     border-left: 1000px solid #fff;
     border-right: 1000px solid #fff;
-    border-top: 100px solid aliceblue;
+    border-top: 100px solid $one-background-color;
+}
+
+.triangle-down-yellow div {
+    width: 0;
+    height: 0;
+    margin-left:-1000px;
+    margin-top:-100px;
+    border-left: 1000px solid $one-background-color;
+    border-right: 1000px solid $one-background-color;
+    border-top: 100px solid $two-background-color;
 }
 
 .two {
-  background-color: aliceblue;
+  background-color: white;
   height: 600px;
 }
 
-.two-about {
+.isosceles {
+    width: 50%;
+    height: 0;
+    padding-left: 50%;
+    padding-bottom: 5%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.isosceles:after {
+  content: "";
+  display: block;
+  width: 0;
+  margin-left: -1000px;
+  margin-bottom: -100px;
+  border-bottom: 100px solid $two-background-color;
+  border-left: 1000px solid transparent;
+  border-right: 1000px solid transparent;
+}
+
+.two-about, .three-project-header {
   font-size: 42px;
   padding: 10px 0;
   text-align: center;
 }
 
+.two-icons-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
 .two-icon-container {
   display: inline-block;
+  margin: 10px 30px;
 }
 
+.two-p-container {
+  justify-content: center;
+  display: flex;
+  margin-top: 30px;
+}
 
+.two-p-bold {
+  font-weight: bold;
+  width: 200px;
+}
+
+.two-p-light {
+  font-weight: light;
+  color: gray;
+  width: 200px;
+}
+
+.two-button {
+  margin: auto 0;
+}
 
 .three {
-  background-color: aliceblue;
-  height: 550px;
+  background-color: $two-background-color;
+  height: 650px;
 }
 
-.three-outline {
-  border: 6px solid white;
-  display: inline-block;
-  height: 300px;
-  top: 50%;
-  left: 50%;
-  margin: 80px 0 0 -15px;
-  padding: 40px;
-  width: 70%;
+
+
+// .three-outline {
+//   border: 6px solid white;
+//   display: inline-block;
+//   height: 300px;
+//   top: 50%;
+//   left: 50%;
+//   margin: 80px 0 0 -15px;
+//   padding: 40px;
+//   width: 70%;
+// }
+
+.three-projects {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-.three-h1 {
-  font-size: 46px;
-  margin: 60px 0;
+.three-indv-project {
+  width: 200px;
+  margin-top: 150px;
+  margin:auto 10px;
+  background-color: rgba(255, 255, 255, 1);
+  // border-radius: 15px;
+  margin-top: 40px;
+  padding: 15px;
+  position: relative;
 }
 
-.three-catchphrase {
-  font-size: 22px
+.three-triangle-topright {
+  position: absolute;
+	width: 0;
+	height: 0;
+  top: 0;
+  right: 0;
+	border-top: 230px solid rgba(192,132,151, .05);
+	border-left: 230px solid transparent;
+
 }
 
-.three-button {
-  font-family:'Quicksand', sans-serif;
-	position: relative;
-	padding: 10px;
-	border: none;
-	color: white;
-	transition: .3s;
-  margin: 10px;
-  background: lighten(#3D9AE2, 10%);
-  color: black;
-  &:hover {
-    background: darken(#3D9AE2, 10%);
+.three-project-title, .three-project-explaination {
+  margin: 6px auto;
+  padding-bottom: 6px;
+  border-bottom: 2px solid $two-background-color;
 }
+
+.three-project-title {
+  // margin-top: 40px;
+  font-size: 26px;
+}
+
+.four {
+  background-color: $one-background-color;
+  height: 500px;
+}
+
+.four-title {
+  font-size: 26px;
+  text-align: center;
+  padding-top: 40px;
 }
 
 @media (max-width: 600px) {
