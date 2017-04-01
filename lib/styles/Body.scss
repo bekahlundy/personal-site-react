@@ -1,0 +1,243 @@
+@import 'variables';
+
+.space {
+  height: 100px;
+}
+
+.big-space {
+  height: 200px;
+}
+.one {
+  background-color: $one-background-color;
+  height: 500px;
+}
+
+.one-title {
+  text-align: center;
+  font-size: 42px;
+  margin-top: 20px;
+}
+
+.one-moto {
+  text-align: center;
+  font-size: 28px;
+  margin-top: 20px;
+}
+
+.one-socialmedia-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.icon {
+  margin: 0 10px;
+}
+
+
+.wrapper {
+  background: $one-background-color;
+  // margin: 10px;
+}
+
+.wrapper {
+  background: white;
+  // margin: 10px;
+}
+
+.triangle-down, .triangle-down-yellow {
+    box-sizing: content-box;
+    width: 50%;
+    height: 0;
+    padding-left:50%;
+    padding-top: 5%;
+    overflow: hidden;
+}
+
+.triangle-down div {
+    width: 0;
+    height: 0;
+    margin-left:-1000px;
+    margin-top:-100px;
+    border-left: 1000px solid #fff;
+    border-right: 1000px solid #fff;
+    border-top: 100px solid $one-background-color;
+}
+
+.triangle-down-yellow div {
+    width: 0;
+    height: 0;
+    margin-left:-1000px;
+    margin-top:-100px;
+    border-left: 1000px solid $one-background-color;
+    border-right: 1000px solid $one-background-color;
+    border-top: 100px solid $two-background-color;
+}
+
+.two {
+  background-color: white;
+  height: 600px;
+}
+
+.isosceles {
+    width: 50%;
+    height: 0;
+    padding-left: 50%;
+    padding-bottom: 5%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.isosceles:after {
+  content: "";
+  display: block;
+  width: 0;
+  margin-left: -1000px;
+  margin-bottom: -100px;
+  border-bottom: 100px solid $two-background-color;
+  border-left: 1000px solid transparent;
+  border-right: 1000px solid transparent;
+}
+
+.two-about, .three-project-header {
+  font-size: 42px;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.two-icons-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.two-icon-container {
+  display: inline-block;
+  margin: 10px 30px;
+}
+
+.two-p-container {
+  justify-content: center;
+  display: flex;
+  margin-top: 30px;
+}
+
+.two-p-bold {
+  font-weight: bold;
+  width: 200px;
+}
+
+.two-p-light {
+  font-weight: light;
+  color: gray;
+  width: 200px;
+}
+
+.two-button {
+  margin: auto 0;
+}
+
+.three {
+  background-color: $two-background-color;
+  height: 650px;
+}
+
+
+
+// .three-outline {
+//   border: 6px solid white;
+//   display: inline-block;
+//   height: 300px;
+//   top: 50%;
+//   left: 50%;
+//   margin: 80px 0 0 -15px;
+//   padding: 40px;
+//   width: 70%;
+// }
+
+.three-projects {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.three-indv-project {
+  width: 200px;
+  margin-top: 150px;
+  margin:auto 10px;
+  background-color: rgba(255, 255, 255, 1);
+  // border-radius: 15px;
+  margin-top: 40px;
+  padding: 15px;
+  position: relative;
+}
+
+.three-triangle-topright {
+  position: absolute;
+	width: 0;
+	height: 0;
+  top: 0;
+  right: 0;
+	border-top: 230px solid rgba(192,132,151, .05);
+	border-left: 230px solid transparent;
+
+}
+
+.three-project-title, .three-project-explaination {
+  margin: 6px auto;
+  padding-bottom: 6px;
+  border-bottom: 2px solid $two-background-color;
+}
+
+.three-project-title {
+  // margin-top: 40px;
+  font-size: 26px;
+}
+
+.four {
+  background-color: $one-background-color;
+  height: 500px;
+}
+
+.four-title {
+  font-size: 26px;
+  text-align: center;
+  padding-top: 40px;
+}
+
+@media (max-width: 600px) {
+  .one {
+    height: 550px;
+  }
+
+  .one-logo {
+    margin: -120px 0 0 -90px
+  }
+
+  .one-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 42px;
+    margin-top: 20px;
+    margin: 30px 0 0 -200px
+  }
+
+  .space {
+    height: 60px;
+  }
+
+  .two {
+    height: 1050px;
+  }
+
+  .two-physical-container, .two-emotional-container, .two-mental-container, .two-spiritual-container {
+    margin: 20px auto;
+    float:none;
+  }
+
+  .three-outline {
+    width: 60%;
+  }
+
+  .three-h1 {
+    margin: 25px 0;
+  }
+}
