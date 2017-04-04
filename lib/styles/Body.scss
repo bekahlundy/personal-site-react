@@ -5,28 +5,36 @@
 }
 
 .big-space {
-  height: 200px;
+  height: 150px;
 }
 .one {
-  background-color: $one-background-color;
+  background-color: #fff;
   height: 500px;
+}
+
+.mountain-img {
+  display: block;
+  margin: 0 auto;
+  transition: .2s;
+  width: 500px;
 }
 
 .one-title {
   text-align: center;
   font-size: 42px;
   margin-top: 20px;
+  position: relative;
 }
 
 .one-moto {
   text-align: center;
-  font-size: 28px;
-  margin-top: 20px;
+  font-size: 26px;
+  margin-top: 25px;
 }
 
 .one-socialmedia-container {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 35px;
 }
 
 .icon {
@@ -35,7 +43,7 @@
 
 
 .wrapper {
-  background: $one-background-color;
+  background: #fff;
   // margin: 10px;
 }
 
@@ -58,9 +66,9 @@
     height: 0;
     margin-left:-1000px;
     margin-top:-100px;
-    border-left: 1000px solid #fff;
-    border-right: 1000px solid #fff;
-    border-top: 100px solid $one-background-color;
+    border-left: 1000px solid lighten($one-background-color, 15);
+    border-right: 1000px solid lighten($one-background-color, 15);
+    border-top: 100px solid #fff;
 }
 
 .triangle-down-yellow div {
@@ -68,13 +76,13 @@
     height: 0;
     margin-left:-1000px;
     margin-top:-100px;
-    border-left: 1000px solid $one-background-color;
-    border-right: 1000px solid $one-background-color;
+    border-left: 1000px solid lighten($one-background-color, 15);
+    border-right: 1000px solid lighten($one-background-color, 15);
     border-top: 100px solid $two-background-color;
 }
 
 .two {
-  background-color: white;
+  background-color: lighten($one-background-color, 15);
   height: 600px;
 }
 
@@ -203,41 +211,58 @@
 }
 
 @media (max-width: 600px) {
-  .one {
-    height: 550px;
+  // .one {
+  //   height: 550px;
+  //   transition: .2s;
+  // }
+
+  .mountain-img {
+    width: 400px;
   }
 
-  .one-logo {
-    margin: -120px 0 0 -90px
+  .one-moto {
+    transition: .2s;
   }
 
   .one-title {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    font-size: 42px;
-    margin-top: 20px;
-    margin: 30px 0 0 -200px
+    font-size: 36px;
+    transition: .2s;
+  }
+  //
+  // .space {
+  //   height: 60px;
+  // }
+  //
+  // .two {
+  //   height: 1050px;
+  // }
+  //
+  // .two-physical-container, .two-emotional-container, .two-mental-container, .two-spiritual-container {
+  //   margin: 20px auto;
+  //   float:none;
+  // }
+  //
+  // .three-outline {
+  //   width: 60%;
+  // }
+  //
+  // .three-h1 {
+  //   margin: 25px 0;
+  // }
+}
+
+@media (max-width: 450px) {
+  .mountain-img {
+    width: 300px;
+    transition: .2s;
   }
 
-  .space {
-    height: 60px;
+  .one-title {
+    font-size: 32px;
+    transition: .2s;
   }
-
-  .two {
-    height: 1050px;
-  }
-
-  .two-physical-container, .two-emotional-container, .two-mental-container, .two-spiritual-container {
-    margin: 20px auto;
-    float:none;
-  }
-
-  .three-outline {
-    width: 60%;
-  }
-
-  .three-h1 {
-    margin: 25px 0;
+  .one-moto {
+    font-size: 20px;
+    transition: .2s;
   }
 }
