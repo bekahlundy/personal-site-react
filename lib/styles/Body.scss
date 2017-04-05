@@ -4,47 +4,6 @@
   height: 100px;
 }
 
-.big-space {
-  height: 150px;
-}
-.one {
-  background-color: #fff;
-  height: 500px;
-}
-
-.mountain-img {
-  display: block;
-  margin: 0 auto;
-  transition: .2s;
-  width: 500px;
-}
-
-.one-title {
-  text-align: center;
-  font-size: 42px;
-  margin-top: 20px;
-  position: relative;
-}
-
-.inline-block {
-  display: inline-block;
-}
-
-.one-moto {
-  text-align: center;
-  font-size: 26px;
-  margin-top: 25px;
-}
-
-.one-socialmedia-container {
-  text-align: center;
-  margin-top: 35px;
-}
-
-.icon {
-  margin: 0 10px;
-}
-
 
 .wrapper {
   background: #fff;
@@ -212,61 +171,4 @@
   font-size: 26px;
   text-align: center;
   padding-top: 40px;
-}
-
-@media (max-width: 600px) {
-  // .one {
-  //   height: 550px;
-  //   transition: .2s;
-  // }
-
-  .mountain-img {
-    width: 400px;
-  }
-
-  .one-moto {
-    transition: .2s;
-  }
-
-  .one-title {
-    font-size: 36px;
-    transition: .2s;
-  }
-  //
-  // .space {
-  //   height: 60px;
-  // }
-  //
-  // .two {
-  //   height: 1050px;
-  // }
-  //
-  // .two-physical-container, .two-emotional-container, .two-mental-container, .two-spiritual-container {
-  //   margin: 20px auto;
-  //   float:none;
-  // }
-  //
-  // .three-outline {
-  //   width: 60%;
-  // }
-  //
-  // .three-h1 {
-  //   margin: 25px 0;
-  // }
-}
-
-@media (max-width: 450px) {
-  .mountain-img {
-    width: 300px;
-    transition: .2s;
-  }
-
-  .one-title {
-    font-size: 32px;
-    transition: .2s;
-  }
-  .one-moto {
-    font-size: 20px;
-    transition: .2s;
-  }
 }

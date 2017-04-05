@@ -1,0 +1,74 @@
+
+.landing-container {
+  background-color: #fff;
+  height: 500px;
+}
+
+.big-space {
+  height: 150px;
+}
+
+.title {
+  text-align: center;
+  font-size: 42px;
+  margin-top: 20px;
+  position: relative;
+}
+
+.mountain-img {
+  display: block;
+  margin: 0 auto;
+  transition: .2s;
+  width: 500px;
+}
+
+.tagline {
+  text-align: center;
+  font-size: 26px;
+  margin-top: 25px;
+}
+
+.socialmedia-container {
+  text-align: center;
+  margin-top: 35px;
+}
+
+.icon {
+  margin: 0 10px;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 36px;
+    transition: .2s;
+  }
+
+  .mountain-img {
+    width: 400px;
+  }
+
+  .tagline {
+    transition: .2s;
+  }
+}
+
+@media (max-width: 450px) {
+  .title {
+    font-size: 32px;
+    transition: .2s;
+  }
+
+  .mountain-img {
+    width: 300px;
+    transition: .2s;
+  }
+
+  .tagline {
+    font-size: 20px;
+    transition: .2s;
+  }
+}
