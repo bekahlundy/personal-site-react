@@ -2,25 +2,13 @@
 @import 'Nav';
 @import 'variables';
 @import 'reset';
-$font: 'Lato', sans-serif;
+
 
 body {
   font-family: $font;
 }
 .center-nav {
   text-align: center;
-}
-
-nav li {
-  display: inline-block;
-  padding: 30px 20px;
-  color: black;
-  font-family: $font;
-  font-weight: 300;
-  text-align: center;
-  &:hover {
-    color: teal;
-  }
 }
 
 h1 {
