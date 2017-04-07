@@ -1,0 +1,32 @@
+.indv-project {
+  width: 200px;
+  margin-top: 150px;
+  margin:auto 10px;
+  background-color: rgba(255, 255, 255, 1);
+  // border-radius: 15px;
+  margin-top: 40px;
+  padding: 15px;
+  position: relative;
+}
+
+.triangle-topright {
+  position: absolute;
+	width: 0;
+	height: 0;
+  top: 0;
+  right: 0;
+	border-top: 230px solid rgba(192,132,151, .05);
+	border-left: 230px solid transparent;
+
+}
+
+.project-title, .project-paragraph {
+  margin: 6px auto;
+  padding-bottom: 6px;
+  border-bottom: 2px solid $two-background-color;
+}
+
+.three-project-title {
+  // margin-top: 40px;
+  font-size: 26px;
+}
